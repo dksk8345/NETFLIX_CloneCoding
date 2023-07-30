@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>넷플릭스 대한민국 - 인터넷으로 시리즈와 영화를 시청하세요</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <link rel="shortcut icon" href="img/nficon2016.ico">
+    <
+
 </head>
 <body>
 <div class="header" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/background.jpeg)">
     <nav>
         <img src="img/NETFLIX_LOGO.png" class = 'logo'>
         <div>
-            <button class = 'language-btn'>한국어 <img src='img/down-icon.png'></button>
-            <button>로그인</button>
+            <button class = 'language-btn'>한국어<img src='img/down-icon.png'></button>
+            <select id="LanguageSelect" onchange="handleOnChange()" data-uia="language-picker-header"><option selected="" lang="ko" label="한국어" value="ko-KR">한국어</option><option lang="en" label="English" value="en-KR">English</option></select>
+            <button onclick = "loginbtn()"">로그인</button>
         </div>
     </nav>
     <div class="header-content">
@@ -23,7 +26,7 @@
         <p>시청할 준비가 되셨나요? 멤버십을 등록하거나 재시작하려면 이메일 주소를 입력하세요.</p>
         <form class = "email-signup">
             <input type = 'email' placeholder="이메일 주소" required>
-            <button type = 'submit'>시작하기</button>
+            <button type = 'submit' >시작하기</button>
         </form>
     </div>
 </div>
@@ -169,6 +172,6 @@
         </div>
     </div>
 </div>
-
+<script type="text/javascript" src="JavaScript/script.js"></script>
 </body>
 </html>
